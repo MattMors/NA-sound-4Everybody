@@ -1,6 +1,8 @@
 import cv2
 import os
 
+# we can use object recognition to recognize stars in the video and generate sound when detected
+# THIS PROJECT IS AN ALPHA AND DOESN'T USE THIS FEATURE
 
 #Const
 frame_dir = 'videos/frames'
