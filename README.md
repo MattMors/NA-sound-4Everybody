@@ -1,10 +1,12 @@
 # NASA space app challenge 2023 - Immersed in the sound of space (F.E.S. team)
 
-Our project aims to provide an auditory experience to silent videos, by adding sounds that realistically reflect each frame.
+Our project aims to provide an auditory experience to silent videos, by adding sounds that match the content of the video.
 
-The videos can be watched on a webapp created by our team, through a player on the homepage. Such videos are a combination of images from the Hubble Telescope and the audio exctracted using our algorithm. The tool we developed could be the key to a full inclusive experience, by allowing for example visually impaired people to finally have a full and coherent perception of Space.
+The videos can be watched on the "NA-Sound4Everybody" website.
 
-The algorithm only relies on the analysis of the main color palettes of each frame, which numeric values will then be used to obtain a frequency and the relative note. Through the use of libraries, said notes are then used to compose a song, then attached back to the video.
+Such videos are a combination of images from the Hubble Telescope and the audio generated using our algorithm. The tool we developed could be the key to a fully inclusive experience, by allowing for example visually impaired people to finally have a full and coherent perception of Space.
+
+For now, the algorithm relies on the analysis of the 4 dominant colors of each frame, which numeric values will then be used to obtain a frequency and the relative note. Through the use of libraries, said notes are then used to compose music and then attached back to the video.
 
 ## Alpha
 This project is just an alpha version developed for NASA SpaceAppsChallenge hackathon.
