@@ -1,0 +1,113 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#tsparticles {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+  .custom-svg-image {
+    width: 15%; /* Imposta la dimensione al 30% */
+    height: auto; /* Imposta l'altezza automatica per mantenere l'aspetto originale */
+    border-radius: 10px;
+    /* Altri stili CSS desiderati */
+  }
+  
+  /* Aggiungi questo codice CSS al tuo file CSS o al foglio di stile inline */
+.large-navbar {
+    height: 150px; /* Imposta l'altezza desiderata per la navbar */
+    padding: 20px; /* Imposta il padding desiderato */
+    background-color: #333; /* Cambia il colore di sfondo se necessario */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Personalizza ulteriormente la navbar e gli elementi di navigazione come desiderato */
+  .large-navbar .navbar-brand {
+    font-size: 24px; /* Imposta la dimensione del testo del brand */
+    color: #fff; /* Cambia il colore del testo se necessario */
+  }
+  
+  .large-navbar .navbar-nav .nav-link {
+    font-size: 18px; /* Imposta la dimensione del testo dei link di navigazione */
+    color: #fff; /* Cambia il colore del testo se necessario */
+  }
+  
+  /* Imposta il colore di sfondo del dropdown se necessario */
+  .large-navbar .navbar-nav .nav-item .dropdown-menu {
+    background-color: #333; /* Cambia il colore di sfondo del dropdown se necessario */
+  }
+  
+  /* Imposta il colore del testo dei dropdown item se necessario */
+  .large-navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    color: #fff; /* Cambia il colore del testo dei dropdown item se necessario */
+  }
+  
+  .custom-bg {
+    background-color: #0b3e91;
+    color: 'white';
+  }
+  
+  .centered-logo {
+    display: block; /* Assicura che l'immagine sia un elemento di blocco */
+    margin: 0 auto; /* Imposta il margine a "0 auto" per centrare l'immagine orizzontalmente */
+  }
+  
+  /* Aggiungi stili per la card della descrizione del video */
+.video-description-card {
+  background-color: #fff; /* Colore dello sfondo */
+  border: 1px solid #ccc; /* Bordo */
+  padding: 20px; /* Spaziatura interna */
+  margin-top: 20px; /* Margine superiore per separare dalla sezione precedente */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Ombra */
+}
+
+.video-description-card h2 {
+  font-size: 20px; /* Dimensione del titolo */
+  margin-top: 0; /* Rimuovi il margine superiore predefinito */
+}
+
+.video-description-card p {
+  font-size: 16px; /* Dimensione del testo della descrizione */
+}
