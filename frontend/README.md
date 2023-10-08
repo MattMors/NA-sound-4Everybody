@@ -1,7 +1,6 @@
 This project was created for NASA Space Apps Challenge in Rome.
 
-## Available Scripts
-
+## Installation
 In the project directory, you can run:
 
 ### `npm install`
