@@ -5,7 +5,10 @@ from frame_processing import *
 import random
 from audio_generation import *
 
-FREQUENCY = 5000
+from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips
+import os
+
+FREQUENCY = 1000
 SCENE_CHANGE_THRESHOLD = 80
 
 melody = []
@@ -41,6 +44,17 @@ def rgb_to_hsv(r, g, b):
     
         v = cmax * 100
         return h, s, v
+
+def finalize_video(base_name):
+    # Open the video and audio
+    video_clip = VideoFileClip(base_name)
+    audio_clip = AudioFileClip('../res/audio/tones.wav')
+
+    # Concatenate the video clip with the audio clip
+    final_clip = video_clip.set_audio(audio_clip)
+    # Export the final video with audio
+    final_clip.write_videofile('../res/video/final_video' + ".mp4")
+
 
 def hue_to_chord(hue):
     threshold_one = [15,30,45,60,75,90,105,120,135,150,165,180]
@@ -114,6 +128,5 @@ while True:
 
 ag.generate_melody(melody)
 
+finalize_video(video_name)
 # function that triggers when two frames' colors differ a lot from each others. It triggers a change of harmonic scale
-def scene_change():
-    print('HERE I AM')
