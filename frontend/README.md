@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created for NASA Space Apps Challenge in Rome.
 
 ## Available Scripts
 
@@ -10,4 +10,7 @@ And to execute the frontend
 
 ### `npm start`
 
+you can go in http://localhost:3000/# and is visible.
+
+![My Remote Image](https://drive.google.com/file/d/1iOe6bkzjG4xpwv-7-tsWwPJSSHNJ7JGj/view?usp=share_link)
 
