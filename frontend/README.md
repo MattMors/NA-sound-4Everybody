@@ -12,5 +12,4 @@ And to execute the frontend
 
 you can go in http://localhost:3000/# and is visible.
 
-![My Remote Image](https://drive.google.com/file/d/1iOe6bkzjG4xpwv-7-tsWwPJSSHNJ7JGj/view?usp=share_link)
-
+![Screen](https://drive.google.com/uc?id=1iOe6bkzjG4xpwv-7-tsWwPJSSHNJ7JGj)
