@@ -5,7 +5,7 @@ from frame_processing import *
 from audio_generation import *
 from moviepy.editor import VideoFileClip, AudioFileClip, concatenate_videoclips
 
-FREQUENCY = 1000
+FREQUENCY = 20000
 SCENE_CHANGE_THRESHOLD = 80
 
 melody = []
@@ -103,6 +103,10 @@ frame_number = 0
 fa = FrameAnalyzer()
 
 while True:
+    _ = fa.frame_segmentation(video, millisec, frame_number)
+    if _ == True:
+        break
+    '''
     palette, difference = fa.frame_processing(video, millisec, frame_number)
     if palette == None:
         break
@@ -117,9 +121,10 @@ while True:
     # plt.show()
 
     previous_palette = palette
+    '''
     millisec += FREQUENCY
     frame_number +=1
 
-ag.generate_melody(melody)
+#ag.generate_melody(melody)
 
-finalize_video(video_name)
+#finalize_video(video_name)
